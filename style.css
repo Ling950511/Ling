@@ -128,3 +128,43 @@ footer video {
     width: 90%;
   }
 }
+
+/* 🌟 Styles pour les sous-sections */
+.main-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.main-content ul li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-content ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.main-content ul li a:hover {
+  text-decoration: underline;
+}
+
+.main-content section {
+  margin-top: 40px;
+}
+
+.main-content section h2 {
+  border-bottom: 2px solid #e91e63;
+  padding-bottom: 10px;
+}
+
+.main-content section ul {
+  margin-top: 20px;
+}
+
+.main-content section ul li {
+  margin-bottom: 10px;
+}
