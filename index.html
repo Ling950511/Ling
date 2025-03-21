@@ -2,49 +2,55 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title> Lingling Kwong </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lingling Kwong</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- 🎬 En-tête avec vidéo -->
+  <!-- 🎬 Vidéo en-tête -->
   <header>
-    <video autoplay loop muted>
-      <source src="/Ling/video.mp4" type="video/mp4">
+    <video autoplay muted loop>
+      <source src="videos/intro.mp4" type="video/mp4" />
       Votre navigateur ne supporte pas la lecture de vidéos.
     </video>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/linglingkwong/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://weibo.com/u/7884299354" target="_blank"><i class="fab fa-weibo"></i></a>
+      <a href="https://x.com/linglingsirilak" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://ch3plus.com/artists/451" target="_blank"><i class="fas fa-link"></i></a>
+    </div>
   </header>
 
-  <!-- 📸 Section Profil (Image + Tableau) -->
-  <section class="profile">
-    <img src="photo.jpg" alt="Lingling Kwong" class="avatar" />
-    
-    <table class="description">
-      <tr>
-        <th>Nom</th>
-        <td>Lingling Kwong</td>
-      </tr>
-      <tr>
-        <th>Profession</th>
-        <td>Actrice</td>
-      </tr>
-      <tr>
-        <th>Nationalité</th>
-        <td>Thaïlandaise</td>
-      </tr>
-      <tr>
-        <th>Réseaux Sociaux</th>
-        <td>
-          <a href="https://www.instagram.com/linglingkwong/">Instagram</a> |
-          <a href="https://weibo.com/u/7884299354">Weibo</a> |
-          <a href="https://weibo.com/u/7884299354">TikTok</a> |
-          <a href="https://x.com/linglingsirilak">X</a> |
-          <a href="https://ch3plus.com/artists/451">Ch3 Plus</a>
-        </td>
-      </tr>
-    </table>
-  </section>
+  <!-- 🧭 Navigation -->
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="evenements.html">Événements</a>
+    <a href="projets.html">Projets</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- 🌤️ Contenu principal avec fond dégradé -->
+  <main class="main-content">
+    <section class="bio">
+      <img src="images/photo.jpg" alt="Lingling Kwong" class="avatar" />
+      <table class="description">
+        <tr><th>Nom</th><td>Lingling Kwong</td></tr>
+        <tr><th>Profession</th><td>Actrice & Influenceuse</td></tr>
+        <tr><th>Nationalité</th><td>Thaïlandaise</td></tr>
+        <tr><th>Réseaux</th>
+          <td>
+            <a href="https://instagram.com">Instagram</a> |
+            <a href="https://weibo.com">Weibo</a> |
+            <a href="https://x.com">X</a> |
+            <a href="https://ch3plus.com">Ch3</a>
+          </td>
+        </tr>
+      </table>
+    </section>
+  </main>
 
 </body>
 </html>
