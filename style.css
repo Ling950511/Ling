@@ -18,6 +18,7 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  animation: glow 3s infinite alternate; /* 🔥 Effet lumineux sur la vidéo */
 }
 
 /* 📸 Section Profil */
@@ -27,6 +28,7 @@ video {
   justify-content: center;
   margin: 40px auto;
   max-width: 900px;
+  animation: fadeIn 1.5s ease-in-out; /* 🔥 Apparition fluide */
 }
 
 /* 🖼️ Image de profil */
@@ -36,6 +38,11 @@ video {
   border-radius: 10px;
   object-fit: cover;
   margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.avatar:hover {
+  transform: scale(1.1); /* 🔥 Zoom léger au survol */
 }
 
 /* 📋 Tableau description */
@@ -44,6 +51,7 @@ video {
   width: 60%;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease-in-out; /* 🔥 Slide-in du tableau */
 }
 
 .description th, .description td {
@@ -66,3 +74,37 @@ video {
 .description a:hover {
   color: #e91e63;
 }
+
+/* 🔥 ANIMATIONS 🔥 */
+
+/* ✨ Apparition fluide */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📜 Slide du tableau */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 💡 Effet lumineux sur la vidéo */
+@keyframes glow {
+  0% { filter: brightness(100%); }
+  50% { filter: brightness(120%); }
+  100% { filter: brightness(100%); }
+}
+
