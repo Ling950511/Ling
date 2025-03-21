@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Lingling Kwong </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="photo.jpg" alt="Photo de profil" class="avatar" />
+    <h1>Ton Nom</h1>
+    <p>Créatif(ve), curieux(se), passionné(e) par le digital.</p>
+    <div class="links">
+      <a href="https://instagram.com">Instagram</a>
+      <a href="https://github.com">GitHub</a>
+      <a href="mailto:tonmail@email.com">Email</a>
+    </div>
+  </div>
+</body>
+</html>
