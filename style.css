@@ -368,13 +368,9 @@ nav a:hover {
 
 
 /* 🧾 CARDS */
-.award-card {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 900px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+ed {
+  background-color: #fff3cd;
+  color: #856404;
 }
 
 .card-content {
