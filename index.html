@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lingling Kwong</title>
+  <title data-i18n="pageTitle">Lingling Kwong</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -11,40 +11,33 @@
 </head>
 <body>
 
-   <!-- 🔤 Sélecteur de langue -->
+  <!-- 🌐 Sélecteur de langue -->
   <div class="language-switcher">
     <button onclick="setLanguage('fr')">FR</button>
     <button onclick="setLanguage('en')">EN</button>
     <button onclick="setLanguage('th')">TH</button>
   </div>
 
-  <!-- 🧭 Barre de navigation -->
+  <!-- 🧱 Barre de navigation -->
   <nav>
-    <a href="index.html">Accueil</a>
-    <a href="evenements.html">Événements</a>
-    <a href="always-wonder.html">Always Wonder</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" data-i18n="nav_home">Accueil</a>
+    <a href="evenements.html" data-i18n="nav_events">Événements</a>
+    <a href="always-wonder.html" data-i18n="nav_aw">Always Wonder</a>
+    <a href="contact.html" data-i18n="nav_contact">Contact</a>
   </nav>
 
-  <!-- 🎨 Contenu avec des IDs pour la traduction -->
-  <main class="main-content">
-    <h1 id="titre">Bienvenue sur mon site</h1>
-    <p id="description">Ceci est un projet artistique unique.</p>
-    <a id="lien-contact" href="contact.html">Contactez-moi</a>
-  </main>
-  
-  <!-- 📸 Section Bio (Photo + Tableau) EN HAUT -->
+  <!-- 🏋️ Section Bio (Photo + Tableau) -->
   <section class="bio">
     <img src="photo/photo.jpg" alt="Lingling Kwong" class="avatar" />
     <table class="description">
-      <tr><th>Nom</th><td>Lingling Kwong</td></tr>
-      <tr><th>Profession</th><td>Actrice</td></tr>
-      <tr><th>Nationalité</th><td>Thaïlandaise</td></tr>
-      <tr><th>Réseaux</th>
+      <tr><th data-i18n="name">Nom</th><td>Lingling Kwong</td></tr>
+      <tr><th data-i18n="job">Profession</th><td data-i18n="job_detail">Actrice</td></tr>
+      <tr><th data-i18n="nationality">Nationalité</th><td data-i18n="country">Thaïlandaise</td></tr>
+      <tr><th data-i18n="social">Réseaux</th>
         <td>
           <a href="https://weibo.com/u/7884299354" target="_blank"><i class="fab fa-weibo"></i></a>
           <a href="https://www.instagram.com/linglingkwong/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.threads.net/@linglingkwong" target="_blank"><i class="fab fa-threads"> </i></a>
+          <a href="https://www.threads.net/@linglingkwong" target="_blank"><i class="fab fa-link"></i></a>
           <a href="https://x.com/linglingsirilak" target="_blank"><i class="fab fa-x-twitter"></i></a>
           <a href="https://www.tiktok.com/@linglingkwong" target="_blank"><i class="fab fa-tiktok"></i></a>
           <a href="https://ch3plus.com/artists/451" target="_blank"><i class="fas fa-tv"></i></a>
@@ -53,46 +46,42 @@
       </tr>
     </table>
   </section>
-  
-  <!-- 🧭 Navigation -->
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="evenements.html">Événements</a>
-    <a href="always-wonder.html">Always Wonder</a>
-    <a href="projets.html">Projets</a>
-  </nav>
 
-  <!-- 🌟 Sections centrales (Événements, Projets, etc.) -->
+  <!-- 🌟 Sections centrales (traduction dynamique) -->
   <main class="main-content">
+    <h1 data-i18n="title">Bienvenue sur mon site</h1>
+    <p data-i18n="description">Ceci est un projet artistique unique.</p>
+    <a href="contact.html" data-i18n="cta_contact">Contactez-moi</a>
+
     <section>
-      <h2>Événements</h2>
-      <p>Prochains événements à ne pas manquer...</p>
+      <h2 data-i18n="section_events">Evénements</h2>
+      <p data-i18n="section_events_text">Prochains événements à ne pas manquer...</p>
     </section>
 
     <section>
-      <h2>Always Wonder</h2>
-      <p>Découvrez Always Wonder...</p>
+      <h2 data-i18n="section_aw">Always Wonder</h2>
+      <p data-i18n="section_aw_text">Découvrez Always Wonder...</p>
     </section>
   </main>
 
-  <!-- 🎬 Vidéo EN BAS -->
+  <!-- 🎥 Vidéo EN BAS -->
   <footer>
     <video autoplay muted loop playsinline>
       <source src="Ling/vidéo.mp4" type="video/mp4" />
       Votre navigateur ne supporte pas la lecture de vidéos.
     </video>
 
-    <!-- 🔗 Icônes sociales rondes -->
+    <!-- 🔗 Icônes sociales -->
     <div class="social-icons">
       <a href="https://weibo.com/u/7884299354" target="_blank"><i class="fab fa-weibo"></i></a>
       <a href="https://www.instagram.com/linglingkwong/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.threads.net/@linglingkwong" target="_blank"><i class="fab fa-threads"> </i></a>
+      <a href="https://www.threads.net/@linglingkwong" target="_blank"><i class="fab fa-link"></i></a>
       <a href="https://x.com/linglingsirilak" target="_blank"><i class="fab fa-x-twitter"></i></a>
       <a href="https://www.tiktok.com/@linglingkwong" target="_blank"><i class="fab fa-tiktok"></i></a>
       <a href="https://ch3plus.com/artists/451" target="_blank"><i class="fas fa-tv"></i></a>
       <a href="always-wonder.html"><i class="fas fa-star"></i></a>
     </div>
-
+  </footer>
 
 </body>
 </html>
