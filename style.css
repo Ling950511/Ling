@@ -282,3 +282,29 @@ footer video {
 .event-summary a:hover {
   text-decoration: underline;
 }
+
+.event-summary {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  background: #f4f4f4;
+  border-bottom: 2px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.event-summary a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #e91e63;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.event-summary a:hover {
+  background-color: #e91e63;
+  color: white;
+}
+
