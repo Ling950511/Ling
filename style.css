@@ -195,3 +195,31 @@ footer video {
   font-size: 1.1em;
   color: #444;
 }
+
+/* 📺 Mise en page des séries avec images */
+.project-box.with-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.project-text {
+  flex: 1 1 60%;
+}
+
+.project-image {
+  flex: 1 1 35%;
+  max-width: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
