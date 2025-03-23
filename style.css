@@ -368,11 +368,6 @@ nav a:hover {
 
 
 /* 🧾 CARDS */
-ed {
-  background-color: #fff3cd;
-  color: #856404;
-}
-
 .card-content {
   display: flex;
   align-items: flex-start;
