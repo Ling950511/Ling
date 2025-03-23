@@ -8,38 +8,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
- 
-  <div id="google_translate_element" style="display: none;"></div>
-
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'fr',
-        includedLanguages: 'fr,en,th',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-      }, 'google_translate_element');
-    }
-
-    function translatePage(lang) {
-      const select = document.querySelector(".goog-te-combo");
-      if (select) {
-        select.value = lang;
-        select.dispatchEvent(new Event("change"));
-      }
-    }
-  </script>
-
-  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 <body>
 
-  <!-- 🌐 Google Translate Widget -->
-  <div id="google_translate_element"></div>
+  <!-- 🌐 Boutons de langue stylés -->
   <div class="language-buttons">
     <button onclick="translatePage('fr')">FR</button>
     <button onclick="translatePage('en')">EN</button>
     <button onclick="translatePage('th')">TH</button>
   </div>
+
+  <!-- 🌐 Google Translate caché -->
+  <div id="google_translate_element" style="display: none;"></div>
 
   <!-- 🧱 Barre de navigation -->
   <nav>
@@ -60,7 +39,7 @@
         <td>
           <a href="https://weibo.com/u/7884299354" target="_blank"><i class="fab fa-weibo"></i></a>
           <a href="https://www.instagram.com/linglingkwong/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.threads.net/@linglingkwong" target="_blank"><i class="fab fa-link"> </i></a>
+          <a href="https://www.threads.net/@linglingkwong" target="_blank"><i class="fab fa-threads"> </i></a>
           <a href="https://x.com/linglingsirilak" target="_blank"><i class="fab fa-x-twitter"></i></a>
           <a href="https://www.tiktok.com/@linglingkwong" target="_blank"><i class="fab fa-tiktok"></i></a>
           <a href="https://ch3plus.com/artists/451" target="_blank"><i class="fas fa-tv"></i></a>
@@ -98,7 +77,7 @@
     <div class="social-icons">
       <a href="https://weibo.com/u/7884299354" target="_blank"><i class="fab fa-weibo"></i></a>
       <a href="https://www.instagram.com/linglingkwong/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.threads.net/@linglingkwong" target="_blank"><i class="fab fa-link"> </i></a>
+      <a href="https://www.threads.net/@linglingkwong" target="_blank"><i class="fab fa-threads"> </i></a>
       <a href="https://x.com/linglingsirilak" target="_blank"><i class="fab fa-x-twitter"></i></a>
       <a href="https://www.tiktok.com/@linglingkwong" target="_blank"><i class="fab fa-tiktok"></i></a>
       <a href="https://ch3plus.com/artists/451" target="_blank"><i class="fas fa-tv"></i></a>
@@ -106,10 +85,25 @@
     </div>
   </footer>
 
-  <!-- 🔄 Google Translate Script -->
+  <!-- 🔄 Script Google Translate + boutons -->
   <script type="text/javascript">
     function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'fr' }, 'google_translate_element');
+      new google.translate.TranslateElement({
+        pageLanguage: 'fr',
+        includedLanguages: 'fr,en,th',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+
+    function translatePage(lang) {
+      const interval = setInterval(() => {
+        const select = document.querySelector(".goog-te-combo");
+        if (select) {
+          select.value = lang;
+          select.dispatchEvent(new Event("change"));
+          clearInterval(interval);
+        }
+      }, 200);
     }
   </script>
   <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
