@@ -4,42 +4,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.language-buttons {
-  text-align: right;
-  padding: 15px 20px;
-}
-
-.language-buttons button {
-  margin-left: 10px;
-  padding: 8px 14px;
-  background-color: #e91e63;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.language-buttons button:hover {
-  background-color: #c2185b;
-}
-
-/* Masquer la barre Google Translate */
-.goog-te-banner-frame.skiptranslate {
-  display: none !important;
-}
-body {
-  top: 0px !important;
-}
-
-/* Masquer logo Google */
-.goog-logo-link,
-.goog-te-gadget span {
-  display: none !important;
-}
-
-/* 📸 Section Bio EN HAUT */
+/* 🏋️ Section Bio EN HAUT */
 .bio {
   display: flex;
   align-items: center;
@@ -80,7 +45,7 @@ body {
   font-weight: bold;
 }
 
-/* 🧭 Barre de navigation */
+/* 🧱 Barre de navigation */
 nav {
   background: #000;
   padding: 10px;
@@ -104,7 +69,7 @@ nav a:hover {
   text-align: center;
 }
 
-/* 🎬 Vidéo EN BAS */
+/* 🎥 Vidéo EN BAS */
 footer {
   position: relative;
   height: 60vh; /* Réduit la hauteur pour ne pas cacher trop */
