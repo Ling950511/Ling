@@ -428,3 +428,18 @@ nav a:hover {
     max-width: 80%;
   }
 }
+
+.award-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 25px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+}
+
+.award-card:hover {
+  transform: scale(1.01);
+}
