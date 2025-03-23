@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,36 +10,28 @@
 </head>
 <body>
 
-  <!-- 🌐 Boutons de langue stylés -->
-  <div class="language-buttons">
-    <button onclick="translatePage('fr')">FR</button>
-    <button onclick="translatePage('en')">EN</button>
-    <button onclick="translatePage('th')">TH</button>
-  </div>
+  <!-- 🌍 Language buttons removed for static English version -->
 
-  <!-- 🌐 Google Translate caché -->
-  <div id="google_translate_element" style="display: none;"></div>
-
-  <!-- 🧱 Barre de navigation -->
+  <!-- 🧭 Navigation bar -->
   <nav>
-    <a href="index.html">Accueil</a>
-    <a href="evenements.html">Événements</a>
+    <a href="index.html">Home</a>
+    <a href="evenements.html">Events</a>
     <a href="always-wonder.html">Always Wonder</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- 🏋️ Section Bio (Photo + Tableau) -->
+  <!-- 👤 Bio Section (Photo + Table) -->
   <section class="bio">
     <img src="photo/photo.jpg" alt="Lingling Kwong" class="avatar" />
     <table class="description">
-      <tr><th>Nom</th><td>Lingling Kwong</td></tr>
-      <tr><th>Profession</th><td>Actrice</td></tr>
-      <tr><th>Nationalité</th><td>Thaïlandaise</td></tr>
-      <tr><th>Réseaux</th>
+      <tr><th>Name</th><td>Lingling Kwong</td></tr>
+      <tr><th>Profession</th><td>Actress</td></tr>
+      <tr><th>Nationality</th><td>Thai</td></tr>
+      <tr><th>Socials</th>
         <td>
           <a href="https://weibo.com/u/7884299354" target="_blank"><i class="fab fa-weibo"></i></a>
           <a href="https://www.instagram.com/linglingkwong/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.threads.net/@linglingkwong" target="_blank"><i class="fab fa-threads"> </i></a>
+          <a href="https://www.threads.net/@linglingkwong" target="_blank"><i class="fab fa-link"></i></a>
           <a href="https://x.com/linglingsirilak" target="_blank"><i class="fab fa-x-twitter"></i></a>
           <a href="https://www.tiktok.com/@linglingkwong" target="_blank"><i class="fab fa-tiktok"></i></a>
           <a href="https://ch3plus.com/artists/451" target="_blank"><i class="fas fa-tv"></i></a>
@@ -49,64 +41,41 @@
     </table>
   </section>
 
-  <!-- 🌟 Sections centrales (Evénements, Projets, etc.) -->
+  <!-- ⭐ Main Content Sections -->
   <main class="main-content">
-    <h1>Bienvenue sur mon site</h1>
-    <p>Ceci est un projet artistique unique.</p>
-    <a href="contact.html">Contactez-moi</a>
+    <h1>Welcome to my site</h1>
+    <p>This is a unique artistic project dedicated to Lingling Kwong.</p>
+    <a href="contact.html">Contact me</a>
 
     <section>
-      <h2>Événements</h2>
-      <p>Prochains événements à ne pas manquer...</p>
+      <h2>Events</h2>
+      <p>Upcoming events not to be missed...</p>
     </section>
 
     <section>
       <h2>Always Wonder</h2>
-      <p>Découvrez Always Wonder...</p>
+      <p>Discover Always Wonder...</p>
     </section>
   </main>
 
-  <!-- 🎥 Vidéo EN BAS -->
+  <!-- 🎥 Video Footer -->
   <footer>
     <video autoplay muted loop playsinline>
       <source src="Ling/vidéo.mp4" type="video/mp4" />
-      Votre navigateur ne supporte pas la lecture de vidéos.
+      Your browser does not support video playback.
     </video>
 
-    <!-- 🔗 Icônes sociales -->
+    <!-- 🔗 Social Icons -->
     <div class="social-icons">
       <a href="https://weibo.com/u/7884299354" target="_blank"><i class="fab fa-weibo"></i></a>
       <a href="https://www.instagram.com/linglingkwong/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.threads.net/@linglingkwong" target="_blank"><i class="fab fa-threads"> </i></a>
+      <a href="https://www.threads.net/@linglingkwong" target="_blank"><i class="fab fa-link"></i></a>
       <a href="https://x.com/linglingsirilak" target="_blank"><i class="fab fa-x-twitter"></i></a>
       <a href="https://www.tiktok.com/@linglingkwong" target="_blank"><i class="fab fa-tiktok"></i></a>
       <a href="https://ch3plus.com/artists/451" target="_blank"><i class="fas fa-tv"></i></a>
       <a href="always-wonder.html"><i class="fas fa-star"></i></a>
     </div>
   </footer>
-
-  <!-- 🔄 Script Google Translate + boutons -->
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'fr',
-        includedLanguages: 'fr,en,th',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-      }, 'google_translate_element');
-    }
-
-    function translatePage(lang) {
-      const interval = setInterval(() => {
-        const select = document.querySelector(".goog-te-combo");
-        if (select) {
-          select.value = lang;
-          select.dispatchEvent(new Event("change"));
-          clearInterval(interval);
-        }
-      }, 200);
-    }
-  </script>
-  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
