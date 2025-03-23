@@ -332,3 +332,116 @@ footer video {
   color: orange;
   font-weight: bold;
 }
+
+
+/* 🎨 Style commun */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+nav {
+  background: #000;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #e91e63;
+}
+
+.main-content {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* 🧾 TABLEAU CLASSIQUE */
+.awards-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+.awards-table th, .awards-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.awards-table th {
+  background-color: #e91e63;
+  color: white;
+}
+
+.awards-table td.won {
+  color: green;
+  font-weight: bold;
+}
+
+.awards-table td.nominated {
+  color: orange;
+  font-weight: bold;
+}
+
+/* 🧾 CARDS */
+.award-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.award-card:hover {
+  transform: translateY(-5px);
+}
+.award-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.badge.won {
+  background-color: #d4edda;
+  color: #2e7d32;
+}
+.badge.nominated {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* 📅 TIMELINE */
+.timeline {
+  position: relative;
+  margin: 40px 0;
+  padding-left: 30px;
+  border-left: 3px solid #e91e63;
+}
+.timeline-item {
+  margin-bottom: 30px;
+}
+.timeline-item h4 {
+  margin: 0 0 5px;
+  font-weight: 600;
+}
+.timeline-item span {
+  font-size: 0.9rem;
+  color: #666;
+}
