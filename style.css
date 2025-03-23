@@ -249,29 +249,36 @@ footer video {
 }
 
 
-.event-nav {
-  text-align: center;
-  padding: 20px 0;
-  background: #f3f3f3;
-}
-
-.event-nav a {
-  margin: 0 20px;
-  color: #e91e63;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1.1rem;
-}
-
-.event-nav a:hover {
-  text-decoration: underline;
-}
-
-.main-content ul {
-  list-style: disc;
-  padding-left: 20px;
-  max-width: 700px;
-  margin: auto;
+.event-summary {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   text-align: left;
 }
 
+.event-summary h2 {
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.event-summary ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.event-summary ul li {
+  margin: 10px 0;
+}
+
+.event-summary a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.event-summary a:hover {
+  text-decoration: underline;
+}
