@@ -4,6 +4,26 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.language-switcher {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.language-switcher button {
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.language-switcher button:hover {
+  background: #c2185b;
+}
+
 /* 📸 Section Bio EN HAUT */
 .bio {
   display: flex;
