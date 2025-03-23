@@ -4,24 +4,39 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.language-switcher {
-  text-align: center;
-  margin: 20px 0;
+.language-buttons {
+  text-align: right;
+  padding: 15px 20px;
 }
 
-.language-switcher button {
-  background: #e91e63;
+.language-buttons button {
+  margin-left: 10px;
+  padding: 8px 14px;
+  background-color: #e91e63;
   color: white;
   border: none;
-  padding: 8px 14px;
-  margin: 0 5px;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 6px;
   font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.language-switcher button:hover {
-  background: #c2185b;
+.language-buttons button:hover {
+  background-color: #c2185b;
+}
+
+/* Masquer la barre Google */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0px !important;
+}
+
+/* Masquer le logo Google Traduction */
+.goog-logo-link,
+.goog-te-gadget span {
+  display: none !important;
 }
 
 /* 📸 Section Bio EN HAUT */
