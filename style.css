@@ -25,7 +25,7 @@ body {
   background-color: #c2185b;
 }
 
-/* Masquer la barre Google */
+/* Masquer la barre Google Translate */
 .goog-te-banner-frame.skiptranslate {
   display: none !important;
 }
@@ -33,7 +33,7 @@ body {
   top: 0px !important;
 }
 
-/* Masquer le logo Google Traduction */
+/* Masquer logo Google */
 .goog-logo-link,
 .goog-te-gadget span {
   display: none !important;
